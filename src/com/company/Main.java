@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
 	
     // Method for Calculating Factorial
@@ -11,6 +13,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-	// write your code here
+        Scanner scanner = new Scanner(System.in);
+        int i = scanner.nextInt();
+        int result = FactorialCreator.calculator(i);
+        System.out.println(result);
     }
 }
